@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐鱼体育 · 日常中的运动韵律</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafafa;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1d1d1f;
+      line-height: 1.7;
+      padding: 0 1.5rem;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 3rem auto 5rem;
+    }
+
+    .hero {
+      text-align: left;
+      margin-bottom: 2.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #111;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #6e6e73;
+      font-weight: 400;
+      max-width: 32rem;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      color: #2c2c2e;
+      padding: 0.25rem 0 0.5rem;
+      border-bottom: 1px solid #e5e5ea;
+      margin-bottom: 2.2rem;
+    }
+
+    .story-wrap {
+      background: #ffffff;
+      padding: 2.2rem 2rem;
+      border-radius: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.02);
+      margin-bottom: 2.8rem;
+    }
+
+    .story-wrap p {
+      margin-bottom: 1.4rem;
+    }
+
+    .highlight-link {
+      color: #0055cc;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,85,204,0.25);
+      transition: border-color 0.2s, color 0.15s;
+      font-weight: 500;
+    }
+
+    .highlight-link:hover {
+      color: #003d99;
+      border-bottom-color: #003d99;
+    }
+
+    .feat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      margin: 1.8rem 0 2.2rem;
+    }
+
+    .feat-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feat-marker {
+      font-size: 1.3rem;
+      line-height: 1.4;
+      color: #1e5f8e;
+      min-width: 1.8rem;
+    }
+
+    .feat-content h3 {
+      font-size: 1.1rem;
+      font-weight: 550;
+      margin-bottom: 0.2rem;
+      color: #1b1b1e;
+    }
+
+    .feat-content p {
+      color: #515154;
+      font-size: 0.98rem;
+      margin: 0;
+    }
+
+    .context-scene {
+      padding: 1.2rem 0 1.6rem;
+      border-top: 1px solid #ececee;
+      margin-top: 0.8rem;
+    }
+
+    .context-scene p {
+      font-size: 0.98rem;
+      color: #3a3a3c;
+      margin-bottom: 0.8rem;
+    }
+
+    .note-box {
+      background: #f3f5f7;
+      border-radius: 24px;
+      padding: 1.6rem 1.8rem;
+      margin-top: 2.4rem;
+    }
+
+    .note-box p {
+      font-size: 0.96rem;
+      color: #444446;
+    }
+
+    .faq-mini {
+      margin: 2rem 0 1.2rem;
+      padding: 0;
+    }
+
+    .faq-mini details {
+      border-bottom: 1px solid #e8e8ed;
+      padding: 0.6rem 0;
+    }
+
+    .faq-mini details summary {
+      font-weight: 500;
+      color: #1d1d1f;
+      cursor: pointer;
+      padding: 0.3rem 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .faq-mini details summary::before {
+      content: "▸";
+      margin-right: 0.6rem;
+      color: #6e6e73;
+      transition: transform 0.2s;
+    }
+
+    .faq-mini details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    .faq-mini details p {
+      margin: 0.5rem 0 0.8rem 1.6rem;
+      font-size: 0.95rem;
+      color: #515154;
+    }
+
+    .closing {
+      text-align: left;
+      margin: 2.8rem 0 1.2rem;
+      border-top: 1px solid #e5e5ea;
+      padding-top: 2rem;
+    }
+
+    .closing p {
+      font-size: 1rem;
+      color: #3a3a3c;
+      max-width: 32rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #eaeaea;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 540px) {
+      .page { margin: 1.8rem auto; }
+      .hero h1 { font-size: 1.8rem; }
+      .story-wrap { padding: 1.6rem 1.2rem; }
+      .feat-item { gap: 0.7rem; }
+      .note-box { padding: 1.2rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <h1>球场边，也有生活的回响</h1>
+      <div class="sub">一次关于运动、节奏与日常陪伴的闲谈</div>
+    </div>
+
+    <div class="intro">
+      如果要用一个词来概括过去十年里，那些让人感到熟悉的动静，<br>我想，体育大概是最朴素的答案之一。
+    </div>
+
+    <div class="story-wrap">
+      <p>
+        傍晚时分，楼下的篮球场偶尔传来球鞋摩擦地面的声音，快攻、急停、简单的庆祝。这种声音从不让人觉得吵闹，反而像是一种生活背景音，提醒你：世界还在按自己的节拍运行。而屏幕另一端的赛事直播、社区里的讨论、朋友间随手的比分分享，也早已成为很多人生活的一部分。
+      </p>
+      <p>
+        在这样的日常里，<a href="https://web-main-leyu.com.cn" class="highlight-link">乐鱼体育</a> 的存在就像是一个不起眼却又稳定的坐标。它不制造喧哗，却总在你需要了解赛况、回顾精彩片段、或者只是随便翻翻最新动态时，恰到好处地出现。没有夸张的渲染，没有刻意的煽动，有的只是一种对体育内容本身的踏实呈现。
+      </p>
+      <p>
+        它不会要求你成为专家，也不会试图替你定义什么是“好的运动”。你可以在上面找到自己喜欢的联赛、球队，或者只是随手看看今天有什么值得关注的对抗。一切都很轻，像傍晚球场上的那阵风。
+      </p>
+
+      <!-- 特点列表 -->
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-marker">◉</div>
+          <div class="feat-content">
+            <h3>内容沉淀，但不沉重</h3>
+            <p>赛事回顾、数据简讯、视频集锦……没有过度包装，信息直接、干净，适合慢慢翻阅。</p>
+          </div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-marker">◉</div>
+          <div class="feat-content">
+            <h3>节奏由你决定</h3>
+            <p>不必追赶推送，也无需被赛程绑架。想看的时候打开，不想看的时候放一放，它就在那里。</p>
+          </div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-marker">◉</div>
+          <div class="feat-content">
+            <h3>界面克制，专注阅读</h3>
+            <p>没有弹窗干扰，没有浮夸动效。干净的版面只为让你更快找到想看的体育内容。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="context-scene">
+        <p>—— 有一次周末下午，我打开 <a href="https://web-main-leyu.com.cn" class="highlight-link">乐鱼体育</a>，只是想确认一场晚上九点的比赛是否改期。结果不小心顺着相关推荐看了三场旧赛季的加时集锦。那个下午没有任何计划，但过得很舒服。</p>
+        <p>这大概就是体育内容该有的样子：不必郑重其事，却总能自然融入生活缝隙。</p>
+      </div>
+    </div>
+
+    <!-- 温和的 FAQ 摘要 -->
+    <div class="faq-mini">
+      <details>
+        <summary>在这里可以看到哪些类型的体育内容？</summary>
+        <p>涵盖足球、篮球、网球、电子竞技等多个领域，以赛事信息、实时比分、视频集锦和短讯为主。内容保持实时更新，风格简洁直接。</p>
+      </details>
+      <details>
+        <summary>需要注册才能浏览吗？</summary>
+        <p>部分基础浏览与查询功能无需注册即可使用。某些个性化设置或收藏功能可能建议登录，但整体门槛很低。</p>
+      </details>
+      <details>
+        <summary>内容更新频率如何？</summary>
+        <p>主要赛事期间保持高频更新，日常也有稳定的内容补充。不会用大量重复信息刷屏，更注重内容质量与可读性。</p>
+      </details>
+    </div>
+
+    <!-- 温和结尾 -->
+    <div class="closing">
+      <p>体育，说到底是一种陪伴。它不解决具体的问题，但它提供一种熟悉的氛围。在某个深夜、某个周末午后，或者只是通勤路上的几分钟，<a href="https://web-main-leyu.com.cn" class="highlight-link">乐鱼体育</a> 都安静地站在那个位置，像球场边那盏从不熄灭的灯。</p>
+      <p style="margin-top: 0.6rem; color: #6e6e73;">没有太多要说的，就这样吧。下次路过的时候，记得看一眼比分。</p>
+    </div>
+
+    <!-- 小小的装饰线 -->
+    <hr>
+    <div style="text-align: center; font-size: 0.85rem; color: #8e8e93; letter-spacing: 1px;">
+      —— 简简单单 · 乐鱼体育 ——
+    </div>
+  </div>
+</body>
+</html>
