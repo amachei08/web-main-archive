@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再访 · aoke</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f9f6f0;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2e2c29;
+            line-height: 1.8;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .page {
+            max-width: 760px;
+            width: 100%;
+        }
+        /* 开场短句 - 类似引语 */
+        .opening {
+            margin: 2rem 0 2.5rem 0;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #4a4239;
+            line-height: 1.4;
+            border-left: 4px solid #b8a998;
+            padding-left: 1.5rem;
+        }
+        .opening span {
+            display: block;
+            margin-top: 0.6rem;
+            font-size: 1rem;
+            color: #7f756a;
+            font-style: italic;
+            font-weight: 300;
+        }
+        /* 承接段落 */
+        .intro-text p {
+            margin-bottom: 1.8rem;
+            font-size: 1.05rem;
+        }
+        .intro-text p:first-of-type::first-letter {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #6b5f53;
+            margin-right: 0.1rem;
+            float: left;
+            line-height: 1;
+        }
+        /* 特点列表 – 温和卡片式 */
+        .feature-block {
+            margin: 2.8rem 0;
+            padding: 0;
+            list-style: none;
+        }
+        .feature-block li {
+            background-color: #ffffffec;
+            border-left: 3px solid #d5c9bc;
+            padding: 1rem 1.8rem;
+            margin-bottom: 1.2rem;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+            transition: background 0.2s;
+        }
+        .feature-block li:hover {
+            background-color: #fffcf7;
+        }
+        .feature-block li strong {
+            display: inline-block;
+            font-weight: 600;
+            color: #5a4e44;
+            margin-right: 0.3rem;
+        }
+        .feature-block li::before {
+            content: "·";
+            color: #b29b86;
+            font-weight: 700;
+            margin-right: 0.8rem;
+        }
+        /* 引用块/提示框 */
+        .notice-box {
+            background: #f2ede6;
+            border-left: 4px solid #c7b8a9;
+            padding: 1.6rem 2rem;
+            margin: 2.5rem 0;
+            border-radius: 0 12px 12px 0;
+            color: #3f3a34;
+        }
+        .notice-box p {
+            font-size: 1rem;
+            margin-bottom: 0.6rem;
+        }
+        .notice-box p:last-child {
+            margin-bottom: 0;
+        }
+        .notice-box cite {
+            display: block;
+            margin-top: 0.8rem;
+            font-style: normal;
+            font-size: 0.9rem;
+            color: #756b61;
+        }
+        /* 温和结尾 */
+        .closing {
+            margin: 2.8rem 0 1rem 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd5cb;
+            font-size: 1rem;
+            color: #5b5249;
+        }
+        .closing p {
+            margin-bottom: 0.8rem;
+        }
+        .closing a {
+            color: #6b5f53;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.1s;
+        }
+        .closing a:hover {
+            color: #3d322a;
+            text-decoration-thickness: 2px;
+        }
+        /* 其他链接嵌入 */
+        .inline-link {
+            color: #6b5f53;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.1s;
+        }
+        .inline-link:hover {
+            color: #3d322a;
+        }
+        /* 响应式细节 */
+        @media (max-width: 520px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .opening {
+                font-size: 1.3rem;
+                padding-left: 1rem;
+            }
+            .feature-block li {
+                padding: 0.8rem 1.2rem;
+            }
+            .notice-box {
+                padding: 1.2rem 1.4rem;
+            }
+        }
+        /* 极简页脚占位 */
+        .footnote {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #b1a79c;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 开场短句 -->
+    <div class="opening">
+        有些网页值得再次推开。
+        <span>—— 记一次安静的折返</span>
+    </div>
+
+    <!-- 承接段落：从再次访问切入 -->
+    <div class="intro-text">
+        <p>
+            上回打开 <a href="https://en-aoke.com" class="inline-link">aoke</a>，大概是几周前的事了。
+            当时随手记下几处细节，想着过些日子再回来看，结果一忙就搁下了。直到今天整理书签，
+            目光落在那一行简短的标题上——没有闪烁的提示，没有催促的标记，就只是一个名字，
+            安安静静地等在那里。我忽然觉得，这样的沉默值得一次回应。
+        </p>
+        <p>
+            再次点击进入，竟有种翻开旧笔记本的熟悉感。版式还是那样素净，文字依旧克制，
+            但某些段落读起来却有了新的意味。也许不是内容变了，而是读的人变了。
+            一个站点如果能让人在第二次访问时仍有所得，那么它便不仅是一个页面，
+            而更像一个愿意等待的老朋友。
+        </p>
+    </div>
+
+    <!-- 特点列表：从收藏与持续关注的角度 -->
+    <ul class="feature-block">
+        <li><strong>不喧哗</strong> —— 没有弹窗、没有自动播放，页面让你自己决定看什么。收藏之后，它不会用推送打扰你，只会安静地留在书签夹里。</li>
+        <li><strong>可回甘</strong> —— 每次重读，那些关于声音、空间与节奏的文字似乎都会浮现出新的层次。适合隔段时间再翻出来看一看。</li>
+        <li><strong>轻质感</strong> —— 加载迅速，排版清朗，在手机和电脑上都保持着一致的阅读呼吸感。收藏后打开，不会因为样式错乱而失望。</li>
+        <li><strong>无囤积压力</strong> —— 它不要求你注册、关注或留下任何东西。你可以悄悄收藏，然后悄悄再来，像在图书馆抽出一本旧刊。</li>
+    </ul>
+
+    <!-- 引用块 / 提示框 -->
+    <div class="notice-box">
+        <p>✹ 收藏提示</p>
+        <p>如果你也习惯把喜欢的页面收进书签，不妨为 <a href="https://en-aoke.com" class="inline-link">aoke</a> 单独建一个文件夹。
+        不是所有站点都值得一个专属位置，但那些让你隔段时间就想起来的，或许应该被轻轻留住。</p>
+        <cite>—— 来自一位不定期回访者的手记</cite>
+    </div>
+
+    <!-- 温和结尾 -->
+    <div class="closing">
+        <p>写下这些文字的时候，我又打开那个标签页看了一眼。页面依旧安静，没有因为我的频繁到访而改变什么。</p>
+        <p>这大概就是它最迷人的地方：<a href="https://en-aoke.com">aoke</a> 不会刻意挽留任何人，
+        但它为愿意留下来的人留足了安静的角落。如果你也曾偶然路过，不妨把它放进收藏夹深处。
+        某天再次点开时，或许会像今天一样，觉得这个决定还不错。</p>
+    </div>
+
+    <div class="footnote">
+        —— 保持安静，保持折返的可能
+    </div>
+
+</div>
+</body>
+</html>
